@@ -1,0 +1,217 @@
+* {box-sizing: border-box;}
+
+body{
+  margin = 0;
+  padding = 0;
+  background: url(backgroundimg.jpg);
+  background-size:cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+/* NavBar */
+.topnav {
+  overflow: hidden;
+  margin-left: 17em;
+  list-style-type: none;
+  padding: 0px 14px;
+  background-color: #1F1F1F;
+  padding-left:0px;
+  display: inline-block;
+
+}
+/*NavBar Text */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*NavBar changing color when hovered*/
+.topnav a:hover {
+  background-color:#3D3D3D;
+  color:white;
+  transition: 0.5s;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+/*Makes the search bar go right of NavBar*/
+.topnav .search-container {
+  float: right;
+}
+
+/* The making of the search bar*/
+.topnav input[type=text] {
+  padding: 4.5px;
+  margin-top: 13px;
+  font-size: 17px;
+  margin-left:10px;
+  border: none;
+}
+
+/*The search Button*/
+.topnav .search-container button {
+  float: right;
+  padding: 4.5px 10px;
+  margin-top: 13px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Search button when hovered*/
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/*Fixes the navbar when screen is minimized*/
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+/*Both the search bar and button*/
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/*makes logo go to the left*/
+.img1{
+float:left;
+}
+/* Allows each icon and text in navbar to change colors when hovered*/
+.topnav .home:hover{
+  color:#d0e300;
+}
+
+.topnav .xbox:hover{
+  color:#26a607;
+  transition: 0.5s;
+}
+
+.topnav .playstation:hover{
+  color:#3a74e8;
+}
+
+.topnav .nintendo:hover{
+  color:#e33434;
+}
+
+.topnav .pc:hover{
+  color:#6b6e68;
+}
+
+.topnav .vr:hover{
+  color:#00a4f0;
+}
+
+.topnav .accessories:hover{
+  color:#ff9b30;
+}
+
+.topnav .account:hover{
+  color:#42fcc4;
+}
+
+.topnav .shop:hover{
+  color:#fc65fc;
+}
+
+/*Makes shopping cart go to the right side */
+.topnav .shop{
+  float:right;
+}
+
+.registerbox{
+  width:300px;
+  height: 590px;
+  background:#1F1F1F;
+  color : #fff;
+  top : 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left:calc(50% - 50px);
+}
+
+h2{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.registerbox p{
+  margin:0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.registerbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.registerbox input[type = "text"], input[type = "password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height:40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.registerbox input[type = "submit"]{
+  border:none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.registerbox input[type = "submit"]:hover{
+  cursor: pointer;
+  background: #ffc107;
+  color:#000;
+}
+
+.registerbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color:#fff;
+}
+
+.registerbox a:hover{
+  color:#ffc107;
+}

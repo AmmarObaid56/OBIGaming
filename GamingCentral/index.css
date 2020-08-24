@@ -1,0 +1,285 @@
+* {box-sizing: border-box;}
+
+}
+body {
+  margin = 0;
+  padding = 0;
+  background: url(backgroundimg.jpg);
+  background-size:cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+/* NavBar */
+.topnav {
+  overflow: hidden;
+  margin-left: 17em;
+  list-style-type: none;
+  padding: 0px 14px;
+  background-color: #1F1F1F;
+  padding-left:0px;
+  display: inline-block;
+
+}
+/*NavBar Text */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*NavBar changing color when hovered*/
+.topnav a:hover {
+  background-color:#3D3D3D;
+  color:white;
+  transition: 0.5s;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/*Makes the search bar go right of NavBar*/
+.topnav .search-container {
+  float: right;
+}
+
+/* The making of the search bar*/
+.topnav input[type=text] {
+  padding: 4.5px;
+  margin-top: 13px;
+  font-size: 17px;
+  margin-left:10px;
+  border: none;
+}
+
+/*The search Button*/
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 13px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Search button when hovered*/
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/*Fixes the navbar when screen is minimized*/
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+/*Both the search bar and button*/
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/*makes logo go to the left*/
+.img1{
+float:left;
+}
+/* Allows each icon and text in navbar to change colors when hovered*/
+.topnav .home:hover{
+  color:#d0e300;
+}
+
+.topnav .xbox:hover{
+  color:#26a607;
+  transition: 0.5s;
+}
+.topnav .xbox:focus{
+  color:#26a607;
+}
+
+.topnav .playstation:hover{
+  color:#3a74e8;
+}
+
+.topnav .nintendo:hover{
+  color:#e33434;
+}
+
+.topnav .pc:hover{
+  color:#6b6e68;
+}
+
+.topnav .vr:hover{
+  color:#00a4f0;
+}
+
+.topnav .accessories:hover{
+  color:#ff9b30;
+}
+
+.topnav .account:hover{
+  color:#42fcc4;
+}
+
+.topnav .shop:hover{
+  color:#fc65fc;
+}
+
+/*Makes shopping cart go to the right side */
+.topnav .shop{
+  float:right;
+}
+
+
+
+.slideshow-container{
+  width:1365px;
+  margin-left:272px;
+  display: inline-block;
+}
+
+/* hides the other images */
+.mySlides{
+  diplay:none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  margin:auto;
+  width: 100%;
+  margin-top:-70px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 40px;
+  background-color: #bbb;
+  border-radius: 0%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-style: solid;
+
+}
+.movingimgs{
+  display: inline-block;
+  margin-left: 780px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Button for "see more"*/
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.button2:hover {
+  background-color: red;
+  color: white;1365
+/* this is the end for @media*/
+}
+
+
+.game-box{
+  width:100%;
+  padding-bottom:30px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+
+    /*float: left;
+    display: block;
+    color: white;
+    background-color:black;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 17px;*/
+
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1F1F1F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#3D3D3D;
+}
+
+.show {
+  display: block;
+}
