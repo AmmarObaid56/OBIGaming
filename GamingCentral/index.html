@@ -4,7 +4,7 @@
 <!--The Name of the tab -->
 <title> GamingCentral Home Page </title>
 <!-- Connects to css -->
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style.css">
 
 <!--This allows the search icon to work-->
 <link rel="stylesheet" type = "text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,8 +18,8 @@
   </head>
 
   <body style = "background:url(backgroundimg.jpg);  margin = 0; padding = 0; background-size:cover; background-position: center; font-family: sans-serif;">
-
-      <div align= "left" style = "margin-left: 9em">
+<div class = "content-wrapper">
+      <div align= "left" style = "margin-left: -10em">
        <a href = "index.html"> <img src = "OBIGaming.png" height = "148px" width = "200px"  class = "img1" style = "margin-left: 8em; background:#E7E7E7; border:1px solid black" alt="OBI World Logo"></img></a>
        <br></br><br></br>
         <h1 style="margin-left:16em; margin-top:-14px">Cheapest Games on Demand </h1>
@@ -27,7 +27,7 @@
       <br><br>
 
   <!-- NavBar -->
-  <div class="topnav">
+  <div class="topnav" style = "margin-left:-35px;">
     <a href = "index.html"class = "home" alt = "home"> <i class="fas fa-home"></i> Home</a>
     <a href = "xbox.html" class = "xbox" alt = "xbox"> <i class="fab fa-xbox"></i>box</a>
     <a href = "playstation.html" class = "playstation" alt = "playstation"> <i class="fab fa-playstation">laystation</i></a>
@@ -52,10 +52,10 @@
 
 <!-- Image Slide Show -->
 
-<div class="slideshow-container">
+<div class="slideshow-container" style = "margin-left:-40px;">
 
 <div class="mySlides fade">
-  <a href = "index.html"><img src="https://media.playstation.com/is/image/SCEA/call-of-duty-modern-warfare-hero-banner-03-ps4-us-30may19?$native_nt$" style="width:1307px; height:500px" alt="Modern Warfare"></a>
+  <a href = "index.html"><img src="https://media.playstation.com/is/image/SCEA/call-of-duty-modern-warfare-hero-banner-03-ps4-us-30may19?$native_nt$" style="width:1100px; height:400px" alt="Modern Warfare"></a>
   <div class="text"<a href = "index.html"><button class="button button2">View Details </button></div>
 </div>
 
@@ -98,7 +98,7 @@
   <span class="dot" onclick="currentSlide(5)"></span>
   <span class="dot" onclick="currentSlide(6)"></span>
 </div>
-
+</div>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
